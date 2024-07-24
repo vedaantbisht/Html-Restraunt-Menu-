@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial scale = 1.0">
+        <title>Simple</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color:antiquewhite;
+                margin-top: 0%;
+                padding: auto;
+            }
+            header{
+                background-color:cadetblue;
+                color:beige;
+                padding: 20px 0;
+                text-align: center;
+            }
+            #header-img{
+                width: 100%;
+                height: auto;
+            }
+            nav{
+                margin: 20px 0;
+            }
+            nav a{
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+            main {
+                padding: 20px;
+            }
+            section {
+                margin-bottom: 40px;
+            }
+            h2 {
+                border-bottom: 2px solid coral;
+                padding-bottom: 10px;
+            }
+            article {
+                background-color: white;
+                padding: 20px;
+                margin: 10px 0;
+                border-radius: 5px;
+                box-shadow: 0 0 10px burlywood;
+            }
+            article img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+            footer {
+                background-color: lightgreen;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id = "header-img" src = "https://i.pinimg.com/564x/e5/19/25/e51925f5b5d2220b13abced253f7629e.jpg" alt="simple restraunt"  width="300">
+            <h1>Simple</h1> 
+            <nav>
+                <a href="#menu">Menu</a><br>
+                <a href="#order-from">Order-From</a>
+            </nav>
+        </header>    
+        <main>
+            <section id = "Menu">
+                <h2>MENU</h2>                
+                <article>
+                    <img src = "https://i.pinimg.com/564x/ce/68/2a/ce682a97579081bc5341b10b44ba5709.jpg" alt = "Dish-1">
+                    <h3>Kathi Paneer Roll</h3>
+                    <p><i>₨-170</i>[The spicy paneer (Indian cottage cheese) inside a soft roti (Indian flatbread) makes for a tasty Paneer Kathi Roll, which is a famous street food in India. These rolls are not only very tasty, but they're also easy to make and filling for a quick meal or snack.]</p>
+                </article>
+                <article>
+                    <img src="https://i.pinimg.com/564x/56/1c/a3/561ca3254baef3ad889fa5b6faf1fcfd.jpg" alt = "Dish-2">
+                    <h3>Veg-fried rice</h3>
+                    <p><i>₨-300</i> [This classic Veg Fried Rice recipe is made with a hearty mix of fresh vegetables, green onions, seasonings and spices for an incredibly flavorful fried rice dish.]</p>
+                </article>
+                <article>
+                    <img src="https://i.pinimg.com/564x/85/16/e5/8516e55d80cd861840bf0f92e0a75bfb.jpg" alt = "Dish-3">
+                    <h3>Crispy Corn Chaat</h3>
+                    <p><i>₨-450</i> [Crispy Corn Chaat is a great dinner appetizer, makes for a good tea time snack or can also be considered as a chat. It is crispy and crunchy on the top, with the corn inside being soft.]</p>                    
+                </article>
+                <article>
+                    <img src="https://i.pinimg.com/564x/41/c7/bf/41c7bf3422cff4a9ac1fb49f4d545513.jpg" alt = "Dish-3">
+                    <h3>Gulab Jamun</h3>
+                    <p><i>₨-850</i> [Gulab jamun are soft delicious berry sized balls made with milk solids, flour & a leavening agent. These are soaked in rose flavored sugar syrup & enjoyed.]</p>
+                </article>
+                <article>
+                    <img src = "https://i.pinimg.com/564x/3e/d1/a5/3ed1a5e62f9c045eabcc8bb988020e69.jpg" alt = "Dish-3">
+                    <h3>Rabri</h3>
+                    <p><i>₨-1050</i>abdi is a traditional North Indian dessert made by simmering full fat milk until it reaches a thick consistency. It is sweetened with sugar & flavored with saffron and cardamoms</p>
+                </article>
+            </section>
+            <section id = "Order-From">
+               <h2>Place Your Order</h2>
+               <form>
+                <label for = "Kathi Paneer Roll">Kathi Paneer Roll</label>                
+                <input type="number" id = "Kathi Paneer Roll" name="Kathi Paneer Roll" min="0" max="10" value="0"><br><br>
+                <label for = "Veg-fried rice">Veg-fried rice</label>
+                <input type="number" id="Veg-fried rice" name="Veg-fried rice" min="0" max="10" value="0"><br><br>
+                <label for="Crispy Corn Chaat">Crispy Corn Chaat</label>
+                <input type="number" id="Crispy Corn Chaat" name="Crispy Corn Chaat" min="0" max="8" value="0"><br><br>
+                <label for="Gulab Jamun">Gulab Jamun</label>
+                <input type="number" id="Gulab Jamun" name="Gulab Jamun" min="0" max="15" value="0"> <br><br>
+                <label for = "Rabri">Rabri</label>
+                <input type="number" id="Rabri" name="Rabri" min="0" max="20" value="0"><br><br>
+
+
+                <label for="sides">Choose your sides:</label>
+                <input type="checkbox" id="Veggie" name="side" value="Veggie" >
+                <label for="veggie">Veggie</label><br>
+                <input type="checkbox" id="Extra-chesse" name="side" value="Extra-chesse" >
+                <label for="Extra-chesse">Extra-chesse</label>
+                <input type="checkbox" id="ice-cream" name="side" value="ice-cream" >
+                <label for="ice-cream">ice-cream</label><br>
+
+                <label for="special-requests">Special Requests</label><br>
+                <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Go To Checkout">
+               </form> 
+            </section>    
+        </main>
+        <footer>
+            <p>Made with Love by Simple</p>
+        </footer>
+        
+    </body>
